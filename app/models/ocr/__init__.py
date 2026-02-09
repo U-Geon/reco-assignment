@@ -1,0 +1,1 @@
+from .models import OCRInput, WeighbridgeTicket, OCRPage, OCRWord

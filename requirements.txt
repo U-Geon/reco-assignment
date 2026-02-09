@@ -1,0 +1,22 @@
+# --- Web Framework ---
+fastapi>=0.109.0        # 최신 기능 및 보안 패치 적용
+uvicorn[standard]>=0.27.0
+
+# --- NLP & Parsing Engine ---
+# 중요: spacy 3.7.4 이상을 사용해야 Pydantic V2와 충돌(ConfigError)이 발생하지 않습니다.
+spacy>=3.7.4
+# ko_core_news_sm은 별도 다운로드 필요
+
+# --- Data Validation & Serialization ---
+pydantic>=2.6.0         # Pydantic V2
+pydantic-settings>=2.1.0
+
+# --- Utility & Logging ---
+loguru
+python-multipart
+
+# --- Testing & Quality Assurance ---
+pytest>=8.0.0
+pytest-asyncio
+httpx
+black
